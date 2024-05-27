@@ -1,0 +1,31 @@
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_bar>li {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-family: var(--ff-all);
+}
+
+@media screen and (max-width: 1250px) {
+    .nav_bar>li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav_bar {
+        display: none;
+    }
+
+    .phone_num {
+        display: none;
+
+    }
+}

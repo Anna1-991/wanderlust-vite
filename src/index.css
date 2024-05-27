@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: 'Caveat', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+}
+
+@font-face {
+  font-family:'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
+}
+
+:root{
+  --m-font: 'Caveat', cursive;
+  --bg-color: rgb(24, 24, 108);
+  --font-color: #fff; 
+  --ff-all: 'Roboto', sans-serif;
+}
+
+.container{
+  margin: 40px 40px;
+}
+
+li{
+  list-style: none;
+}

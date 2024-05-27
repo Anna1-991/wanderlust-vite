@@ -1,0 +1,28 @@
+.phone_icon {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.phone_icon > a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 18px;
+    font-family: var(--ff-all);
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px){
+    .phone_icon > a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .phone_icon{
+        margin-top: 50px;
+    }
+}
