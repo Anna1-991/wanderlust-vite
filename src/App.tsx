@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
-import { Main } from "./Components/Main/Main";
 import animationData from './Lottie/Animation.json'
+import { Main } from "./Components/Main/Main";
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -20,9 +20,7 @@ function App() {
                     <Lottie animationData={animationData}/>
                 </div>
             ) : (
-                <div>
-                    <Main />
-                </div>
+                <Main/>
             )}
         </div>
     );

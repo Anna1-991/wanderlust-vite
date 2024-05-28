@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import App from './App.js';
 import './index.css';
-import { Main } from './Components/Main/Main.jsx';
+// import { Main } from './Components/Main/Main.jsx';
 
 // const router = createBrowserRouter([
 //   {
@@ -21,7 +21,7 @@ import { Main } from './Components/Main/Main.jsx';
 //   },
 // ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,

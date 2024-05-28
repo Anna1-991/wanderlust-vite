@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import './mobileNavBar.css';
 import { Dropdown } from "../Dropdown/Dropdown";
-import { PhoneNumber } from "../PhoneNumber/PhoneNumber";
-import { SocialMedia } from "../SocialMedia/SocialMedia";
-
+import { PhoneNumber } from '../PhoneNumber/PhoneNumber';
+import { SocialMedia } from '../SocialMedia/SocialMedia';
 
 export const MobileNavBar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -22,11 +21,11 @@ export const MobileNavBar = () => {
                 {isMenuOpen && (
                     <>
                         <ul className="nav">
-                            <li to="/">Գլխավոր</li>
+                            <li>Գլխավոր</li>
                             <Dropdown/>
-                            <li to="/partners">Գործընկերներ</li>
+                            <li>Գործընկերներ</li>
                         </ul>
-                        <PhoneNumber number={'+374 99 99-99-99'} />
+                        <PhoneNumber number={'+374 95 06-06-07'} />
                         <SocialMedia />
                     </>
                 )}
