@@ -4,17 +4,12 @@
     justify-content: center;
 }
 
-.nav_bar>li {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+.nav_bar > li a {
     margin-left: 40px;
-    cursor: pointer;
-    font-family: var(--ff-all);
 }
 
 @media screen and (max-width: 1250px) {
-    .nav_bar>li {
+    .nav_bar > li a {
         font-size: 15px;
     }
 }

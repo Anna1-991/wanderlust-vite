@@ -3,6 +3,7 @@ import "./navBar.css";
 import { Dropdown } from "../Dropdown/Dropdown";
 import { MobileNavBar } from "../MobileNavBar/MobileNavBar";
 import { PhoneNumber } from "../PhoneNumber/PhoneNumber";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
     return (
@@ -12,9 +13,13 @@ export const Navbar = () => {
                     <PhoneNumber number={"+374 95 06-06-07"} />
                 </div>
                 <ul className="nav_bar container">
-                    <li>Գլխավոր</li>
+                    <li>
+                        <Link to={"/Home"}>Գլխավոր</Link>
+                    </li>
                     <Dropdown />
-                    <li>Գործընկերներ</li>
+                    <li>
+                        <Link to={"/Partners"}>Գործընկերներ</Link>
+                    </li>
                 </ul>
             </nav>
             <MobileNavBar />

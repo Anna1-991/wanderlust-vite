@@ -13,11 +13,10 @@
 .dropdown_content {
     display: none;
     border-radius: 12px;
-    background: radial-gradient(circle at 60%, rgb(72, 72, 237), rgb(24, 24, 108));
+    background: radial-gradient(circle at 60%, var(--bg-color),var(--bg-color));
     z-index: 1;
     opacity: 0;
     height: 0;
-    border: 1px solid red;
 }
 
 .dropdown_content > li {
@@ -132,16 +131,16 @@
 }
 
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 1024px) {
     .dropdown_button {
         font-size: 18px;
-        margin-left: 0;
+        margin-right: 50px;
         margin-top: 35px;
     }
     .dropdown_content.open_anim{
         margin: 0;
         top: 140px;
-        background: radial-gradient(circle at 60%, rgb(32, 32, 179), rgb(24, 24, 108));
+        background: radial-gradient(circle at 60%, var(--bg-color),var(--bg-color));
     }
     .dropdown_content > li{
         padding: 5px 8px;

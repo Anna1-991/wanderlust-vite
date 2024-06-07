@@ -3,6 +3,7 @@ import './mobileNavBar.css';
 import { Dropdown } from "../Dropdown/Dropdown";
 import { PhoneNumber } from '../PhoneNumber/PhoneNumber';
 import { SocialMedia } from '../SocialMedia/SocialMedia';
+import { Link } from 'react-router-dom';
 
 export const MobileNavBar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -21,9 +22,13 @@ export const MobileNavBar = () => {
                 {isMenuOpen && (
                     <>
                         <ul className="nav">
-                            <li>Գլխավոր</li>
+                            <li>
+                                <Link to={'/Home'} >Գլխավոր</Link>
+                            </li>
                             <Dropdown/>
-                            <li>Գործընկերներ</li>
+                            <li>
+                                <Link to={"/Partners"}>Գործընկերներ</Link>
+                            </li>
                         </ul>
                         <PhoneNumber number={'+374 95 06-06-07'} />
                         <SocialMedia />

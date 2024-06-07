@@ -12,12 +12,16 @@
     color: var(--font-color);
     font-size: 18px;
     font-family: var(--ff-all);
-    font-size: 16px;
+    font-size: 18px;
+    margin-right: 60px;
 }
 
 @media screen and (max-width: 1024px){
+    .phone_icon {
+        margin-top: 70px;
+    }
     .phone_icon > a{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
