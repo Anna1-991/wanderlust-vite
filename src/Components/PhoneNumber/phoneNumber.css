@@ -13,12 +13,11 @@
     font-size: 18px;
     font-family: var(--ff-all);
     font-size: 18px;
-    margin-right: 60px;
 }
 
 @media screen and (max-width: 1024px){
     .phone_icon {
-        margin-top: 70px;
+        margin: 50px 30px 0 0;
     }
     .phone_icon > a{
         font-size: 20px;

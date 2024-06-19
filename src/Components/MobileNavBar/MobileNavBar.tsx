@@ -4,6 +4,7 @@ import { Dropdown } from "../Dropdown/Dropdown";
 import { PhoneNumber } from '../PhoneNumber/PhoneNumber';
 import { SocialMedia } from '../SocialMedia/SocialMedia';
 import { Link } from 'react-router-dom';
+import planeImg from '../../assets/images/plane-heart.png'
 
 export const MobileNavBar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -32,6 +33,7 @@ export const MobileNavBar = () => {
                         </ul>
                         <PhoneNumber number={'+374 95 06-06-07'} />
                         <SocialMedia />
+                        <img src={planeImg} alt="" />
                     </>
                 )}
             </div>

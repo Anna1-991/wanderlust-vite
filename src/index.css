@@ -22,7 +22,7 @@
 
 :root {
   --m-font: 'Caveat', cursive;
-  --bg-color: rgb(24, 24, 108);
+  --bg-color: #18186c;
   --font-color: #fff;
   --ff-all: 'Roboto', sans-serif;
 }
@@ -38,7 +38,7 @@ li {
 li > a {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 22px;
   cursor: pointer;
   font-family: var(--ff-all);
 }

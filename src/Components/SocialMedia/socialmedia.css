@@ -1,13 +1,17 @@
 .social_media {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    position: absolute;
+    z-index: 5;
+    top: 200px;
+    right: 50px;
 }
 
 .social_media .icon{
     text-decoration: none;
-    color: black;
+    color: var(--bg-color);
     position: relative;
     background: #ffffff;
     border-radius: 50%;
@@ -88,4 +92,16 @@
 .social_media .telegram:hover .tooltip::before {
     background: #0088cc;
     color: #ffffff;
+}
+
+@media screen and (max-width: 1024px){
+        .hide_on_small_screen {
+            display: none;
+        }
+        .social_media{
+            display: flex;
+            flex-direction: row;
+            top: 65%;
+            left: 60px;
+        }
 }

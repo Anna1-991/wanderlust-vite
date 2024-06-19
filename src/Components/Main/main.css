@@ -1,4 +1,7 @@
 .main_wrapper{
     background-color: #ededed;
     min-height: 100vh;
+    /* background-image: url(../../assets/images/plane-bg.png);
+    background-repeat: no-repeat;
+    background-size: 1500px; */
 }
