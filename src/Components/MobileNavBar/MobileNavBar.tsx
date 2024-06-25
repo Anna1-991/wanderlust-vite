@@ -24,11 +24,11 @@ export const MobileNavBar = () => {
                     <>
                         <ul className="nav">
                             <li>
-                                <Link to={'/Home'} >Գլխավոր</Link>
+                                <Link to={'/home'} >Գլխավոր</Link>
                             </li>
                             <Dropdown/>
                             <li>
-                                <Link to={"/Partners"}>Գործընկերներ</Link>
+                                <Link to={"/partners"}>Գործընկերներ</Link>
                             </li>
                         </ul>
                         <PhoneNumber number={'+374 95 06-06-07'} />

@@ -1,5 +1,4 @@
 import "./navBar.css";
-// import { Link } from "react-router-dom";
 import { Dropdown } from "../Dropdown/Dropdown";
 import { MobileNavBar } from "../MobileNavBar/MobileNavBar";
 import { PhoneNumber } from "../PhoneNumber/PhoneNumber";
@@ -14,11 +13,11 @@ export const Navbar = () => {
                 </div>
                 <ul className="nav_bar container">
                     <li>
-                        <Link to={"/Home"}>Գլխավոր</Link>
+                        <Link to='/'>Գլխավոր</Link>
                     </li>
                     <Dropdown />
                     <li>
-                        <Link to={"/Partners"}>Գործընկերներ</Link>
+                        <Link to='/partners'>Գործընկերներ</Link>
                     </li>
                 </ul>
             </nav>
