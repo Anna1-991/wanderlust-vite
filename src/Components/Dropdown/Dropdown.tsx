@@ -29,7 +29,6 @@ export const Dropdown = () => {
                     <li className={`list ${isDropdownOpen ? 'open_anim2' : ''}`}>Ավիատոմսեր</li>
                     <li className={`list ${isDropdownOpen ? 'open_anim3' : ''}`}>Վիզա</li>
                     <li className={`list ${isDropdownOpen ? 'open_anim4' : ''}`}>Ճանապարհորդական <br/> ապպահովագրություն</li>
-                    <li className={`list ${isDropdownOpen ? 'open_anim5' : ''}`}>Մեր ուղևորները</li>
                 </ul>
             )}
         </div>

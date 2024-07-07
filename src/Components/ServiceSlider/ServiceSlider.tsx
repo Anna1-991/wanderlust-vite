@@ -20,6 +20,7 @@ import milan from "../../assets/slider/milan.png";
 export const ServiceSlider: React.FC = () => {
     return (
         <section className="swiper container">
+            <h2>Թեժ առաջարկներ</h2>
             <Swiper
                 effect={"coverflow"}
                 grabCursor={true}
