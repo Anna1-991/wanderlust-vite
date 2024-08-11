@@ -25,7 +25,7 @@ function App() {
                         height: "100vh",
                     }}
                 >
-                    <Lottie animationData={animationData} />
+                    <Lottie animationData={animationData}  />
                 </div>
             ) : (
                 <Main />

@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import './dropdown.css';
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
 import { useOutSideClick } from '../../hooks/useOutsideClick';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export const Dropdown = () => {
@@ -25,10 +25,18 @@ export const Dropdown = () => {
             </div>
             {isDropdownOpen && (
                 <ul className={`dropdown_content ${isDropdownOpen ? "open_anim" : ""}`}>
-                    <li className={`list ${isDropdownOpen ? 'open_anim1' : ''}`}>Փաթեթներ</li>
-                    <li className={`list ${isDropdownOpen ? 'open_anim2' : ''}`}>Ավիատոմսեր</li>
-                    <li className={`list ${isDropdownOpen ? 'open_anim3' : ''}`}>Վիզա</li>
-                    <li className={`list ${isDropdownOpen ? 'open_anim4' : ''}`}>Ճանապարհորդական <br/> ապպահովագրություն</li>
+                    <li className={`list ${isDropdownOpen ? 'open_anim1' : ''}`}>
+                        <Link to={''}>Փաթեթներ</Link> 
+                    </li>
+                    <li className={`list ${isDropdownOpen ? 'open_anim2' : ''}`}>
+                        <Link to={''}>Ավիատոմսեր</Link> 
+                    </li>
+                    <li className={`list ${isDropdownOpen ? 'open_anim3' : ''}`}>
+                        <Link to={''}>Վիզա</Link> 
+                    </li>
+                    <li className={`list ${isDropdownOpen ? 'open_anim4' : ''}`}>
+                        <Link to={''}>Ճանապարհորդական Աապպահովագրություն</Link> 
+                    </li>
                 </ul>
             )}
         </div>
