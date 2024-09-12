@@ -3,7 +3,6 @@ import Lottie from "lottie-react";
 import animationData from "./Lottie/Animation.json";
 import { Main } from "./Components/Main/Main";
 
-
 function App() {
     const [loading, setLoading] = useState(true);
 
@@ -25,7 +24,7 @@ function App() {
                         height: "100vh",
                     }}
                 >
-                    <Lottie animationData={animationData}  />
+                    <Lottie animationData={animationData} />
                 </div>
             ) : (
                 <Main />
