@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
 import { fetchReviews, ReviewProps } from "../../api/Review";
-import './review.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./review.css";
 
 export const Review: React.FC = () => {
     const [people, setPeople] = useState<ReviewProps[]>([]);
@@ -22,33 +25,58 @@ export const Review: React.FC = () => {
         getReviews();
     }, []);
 
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+    };
+
     if (loading) return <p>Loading...</p>;
     if (error) return <p>{error}</p>;
 
     return (
         <section className="section">
-            <div className="title">
-                <h2>
-                    <span>/</span>reviews
-                </h2>
-            </div>
-            <div className="section-center">
+            <h3>Մեր Հաճախորդները</h3>
+            <div className="slider-container">
                 {people.length > 0 ? (
-                    <ul className="review-list">
+                    <Slider {...settings}>
                         {people.map((person) => {
-                            const { id, text, user, date, url, likesCount, commentsCount } = person;
+                            const { id, text, user, date, url, likesCount } =
+                                person;
                             return (
-                                <li key={id} className="review-item">
-                                    <p className="text">{text}</p>
-                                    <p className="author">{user.name}</p>
-                                    <p className="date">{new Date(date).toLocaleDateString()}</p>
-                                    <p className="likes">Likes: {likesCount}</p>
-                                    <p className="comments">Comments: {commentsCount}</p>
-                                    <a href={url} target="_blank">View on Facebook</a>
-                                </li>
+                                <div key={id} className="review-slide">
+                                    <div className="review-content">
+                                        <p className="text">
+                                            <span>"</span>
+                                            {text}
+                                            <span>"</span>
+                                        </p>
+                                        <p className="author">{user.name}</p>
+                                        <p className="date">
+                                            {new Date(
+                                                date
+                                            ).toLocaleDateString()}
+                                        </p>
+                                        <p className="likes">
+                                            Likes: {likesCount}
+                                        </p>
+                                        <a
+                                            href={url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            View on Facebook
+                                        </a>
+                                    </div>
+                                </div>
                             );
                         })}
-                    </ul>
+                    </Slider>
                 ) : (
                     <p>No reviews available.</p>
                 )}

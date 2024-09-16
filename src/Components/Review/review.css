@@ -1,3 +1,58 @@
-.WidgetTitle__Header-sc-ruy1gu-2{
-    font-size: 52px;
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.review-slide {
+    padding: 20px;
+    text-align: center;
+}
+
+.section > h3{
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family:  var(--m-font);
+}
+
+.review-content p {
+    margin: 10px 0;
+}
+
+.text {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5b5b5b;
+    
+}
+
+.text span{
+    font-size: 46px;
+    color: #777676;
+}
+
+.author {
+    font-weight: bold;
+    color: #555;
+}
+
+.author {
+    font-weight: bold;
+    color: #555;
+}
+
+.date,
+.likes,
+.comments {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.slick-dots li button:before {
+    color: #555;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #333;
 }
