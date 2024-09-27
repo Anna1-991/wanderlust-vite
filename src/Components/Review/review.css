@@ -1,9 +1,9 @@
-.slider-container {
+.slider_container {
     width: 80%;
     margin: 0 auto;
 }
 
-.review-slide {
+.review_slide {
     padding: 20px;
     text-align: center;
 }
@@ -15,44 +15,53 @@
     font-family:  var(--m-font);
 }
 
-.review-content p {
+.review_content p {
     margin: 10px 0;
 }
 
 .text {
-    position: relative;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: var(--m-font);
+    font-size: 28px;
+    font-weight: 600;
     color: #5b5b5b;
     
 }
 
-.text span{
-    font-size: 46px;
-    color: #777676;
+.review_content > a{
+    color: #777;
+    font-size: 20px;
+}
+
+.text > span{
+    font-family: var(--m-font);
+    font-size: 40px;
+    color: #5b5b5b;
+
+}
+
+.author {
+    color: #5b5b5b;
+    font-size: 22px;
 }
 
 .author {
     font-weight: bold;
-    color: #555;
-}
+    color: #5b5b5b;
 
-.author {
-    font-weight: bold;
-    color: #555;
 }
 
 .date,
 .likes,
 .comments {
-    font-size: 0.9rem;
+    font-size: 20px;
+    font-family: var(--m-font);
     color: #777;
 }
 
-.slick-dots li button:before {
-    color: #555;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #333;
+.read_more, .read_less{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #777;
+    font-family: var(--m-font);
 }

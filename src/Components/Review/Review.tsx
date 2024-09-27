@@ -42,20 +42,16 @@ export const Review: React.FC = () => {
     return (
         <section className="section">
             <h3>Մեր Հաճախորդները</h3>
-            <div className="slider-container">
+            <div className="slider_container">
                 {people.length > 0 ? (
                     <Slider {...settings}>
                         {people.map((person) => {
                             const { id, text, user, date, url, likesCount } =
                                 person;
                             return (
-                                <div key={id} className="review-slide">
-                                    <div className="review-content">
-                                        <p className="text">
-                                            <span>"</span>
-                                            {text}
-                                            <span>"</span>
-                                        </p>
+                                <div key={id} className="review_slide">
+                                    <div className="review_content">
+                                        <TruncatedText text={text} />
                                         <p className="author">{user.name}</p>
                                         <p className="date">
                                             {new Date(
@@ -82,5 +78,38 @@ export const Review: React.FC = () => {
                 )}
             </div>
         </section>
+    );
+};
+
+const TruncatedText: React.FC<{ text: string }> = ({ text }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const limit = 100; 
+
+    const toggleExpanded = () => {
+        setIsExpanded(!isExpanded);
+    };
+
+    return (
+        <div>
+            <p className="text">
+                <span>"</span>
+                {isExpanded || text.length <= limit ? (
+                    text
+                ) : (
+                    <>
+                        {text.substring(0, limit)}...
+                        <button className="read_more" onClick={toggleExpanded}>
+                            Read More
+                        </button>
+                    </>
+                )}
+                <span>"</span>
+            </p>
+            {isExpanded && text.length > limit && (
+                <button className="read_less" onClick={toggleExpanded}>
+                    Read Less
+                </button>
+            )}
+        </div>
     );
 };

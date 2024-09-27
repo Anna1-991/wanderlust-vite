@@ -3,12 +3,17 @@ import { Telegram } from './Telegram/Telegram';
 import { WhatsApp } from './WhatsApp/WhatsApp';
 import './socialmedia.css';
 
-export const SocialMedia = () => {
+
+interface SocialMediaProps {
+    footer?: boolean;  // `footer` is optional and can be a boolean
+}
+
+export const SocialMedia: React.FC<SocialMediaProps> = ({footer}) => {
     const phoneNumber = '+37495060607';
     const message = "Hello, let's talk!!!";
 
     return (
-        <ul className="social_media">
+        <ul className={`social_media ${footer ? '' : 'footer_layout'} 'hide_on_small_screen'`}>
             <li>
                 <a className="icon facebook" href={'https://www.facebook.com/profile.php?id=100093948756626'} target="_blank" rel="noopener noreferrer">
                     <span className="tooltip">Facebook</span>

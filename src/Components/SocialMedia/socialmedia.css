@@ -1,12 +1,11 @@
 .social_media {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     z-index: 4;
-    top: 250px;
-    right: 50px;
+    bottom: 120px;
+    left: 40%;
 }
 
 .social_media .icon{
@@ -94,14 +93,17 @@
     color: #ffffff;
 }
 
+.footer_layout{
+    bottom: -150px;
+    left: 0;
+}
+
 @media screen and (max-width: 1024px){
         .hide_on_small_screen {
             display: none;
         }
         .social_media{
             display: flex;
-            flex-direction: row;
-            top: 65%;
-            left: 60px;
+            bottom: -85%;
         }
 }
