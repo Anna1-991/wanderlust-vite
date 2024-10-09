@@ -30,7 +30,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <header className={`header_wrapper ${isScrollingUp ? "show" : "hide"}`}>
+        <header className={`header_wrapper container ${isScrollingUp ? "show" : "hide"}`}>
             <div className="logo_container">
                 <img className="logo" src={imageUrl} alt="logo" />
                 <h1>Wanderlust Travel Team</h1>

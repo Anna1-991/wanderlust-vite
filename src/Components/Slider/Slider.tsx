@@ -10,7 +10,6 @@ import "swiper/css/autoplay";
 
 import "./slider.css";
 import { Autoplay, EffectFade } from "swiper/modules";
-import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 export const Slider: React.FC = () => {
     return (
@@ -43,9 +42,6 @@ export const Slider: React.FC = () => {
                     <img src={greece} alt="Greece" />
                 </SwiperSlide>
             </Swiper>
-            <div className="hide_on_small_screen">
-                <SocialMedia />
-            </div>
         </>
     );
 };

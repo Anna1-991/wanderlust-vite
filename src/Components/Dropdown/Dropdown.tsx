@@ -25,9 +25,6 @@ export const Dropdown = () => {
             </div>
             {isDropdownOpen && (
                 <ul className={`dropdown_content ${isDropdownOpen ? "open_anim" : ""}`}>
-                    <li className={`list ${isDropdownOpen ? 'open_anim1' : ''}`}>
-                        <Link to={''}>Փաթեթներ</Link> 
-                    </li>
                     <li className={`list ${isDropdownOpen ? 'open_anim2' : ''}`}>
                         <Link to={''}>Ավիատոմսեր</Link> 
                     </li>

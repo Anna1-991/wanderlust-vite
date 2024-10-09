@@ -40,7 +40,7 @@ export const Review: React.FC = () => {
     if (error) return <p>{error}</p>;
 
     return (
-        <section className="section">
+        <section className="section" id="reviews">
             <h3>Մեր Հաճախորդները</h3>
             <div className="slider_container">
                 {people.length > 0 ? (
