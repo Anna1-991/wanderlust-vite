@@ -11,7 +11,7 @@ export const FooterServiceSub = () => {
             <Link to={''}>Վիզա</Link> 
         </li>
         <li id="sub_nav_link">
-            <Link to={''}>Ճանապարհորդական Աապպահովագրություն</Link> 
+            <Link to={''}>Ճանապարհորդական <br /> Աապպահովագրություն</Link> 
         </li>
     </ul>
     );
