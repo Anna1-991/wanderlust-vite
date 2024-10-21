@@ -19,9 +19,10 @@
     top: 0;
 }
 
-.logo_container {
+.logo_container > a{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo_container h1 {
@@ -42,6 +43,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
     .logo_container h1 {
         font-size: 18px;
     }

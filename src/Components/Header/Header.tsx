@@ -2,6 +2,7 @@ import "./header.css";
 import { Navbar } from "../NavBar/NavBar";
 import logo from "../../assets/images/Logo.png";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const imageUrl: string = logo;
 
@@ -30,10 +31,16 @@ export const Header = () => {
     }, []);
 
     return (
-        <header className={`header_wrapper container ${isScrollingUp ? "show" : "hide"}`}>
+        <header
+            className={`header_wrapper container ${
+                isScrollingUp ? "show" : "hide"
+            }`}
+        >
             <div className="logo_container">
-                <img className="logo" src={imageUrl} alt="logo" />
-                <h1>Wanderlust Travel Team</h1>
+                <Link to={"/home"}>
+                    <img className="logo" src={imageUrl} alt="logo" />
+                    <h1>Wanderlust Travel Team</h1>
+                </Link>
             </div>
             <Navbar />
         </header>

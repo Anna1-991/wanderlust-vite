@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./partners.css";
 import image1 from "../../assets/images/partners/image1.png";
 import image2 from "../../assets/images/partners/image2.png";
@@ -11,6 +11,12 @@ import image8 from "../../assets/images/partners/image8.png";
 import image9 from "../../assets/images/partners/image9.png";
 
 export const Partners: React.FC = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", 
+        });
+    }, [])
     return (
         <section className="partners container">
             <h3>Մեր Գործընկերները</h3>
