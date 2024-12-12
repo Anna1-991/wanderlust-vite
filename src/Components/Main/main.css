@@ -1,4 +1,25 @@
-.main_wrapper{
+.main_wrapper {
     background-color: #ededed;
+    width: 100%;
+    max-width: 1728px;
     min-height: 100vh;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .main_wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_wrapper {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_wrapper {
+        padding: 10px;
+    }
 }

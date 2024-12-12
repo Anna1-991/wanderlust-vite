@@ -1,5 +1,6 @@
 .header_wrapper {
     width: 100%;
+    max-width: 1728px;
     height: 80px;
     background: var(--bg-color);
     display: flex;
@@ -19,7 +20,7 @@
     top: 0;
 }
 
-.logo_container > a{
+.logo_container>a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -43,20 +44,29 @@
 }
 
 @media only screen and (max-width: 1024px) {
-
     .logo_container h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 768px) {
     .logo_container h1 {
-        font-size: 36px;
+        font-size: 18px;
+    }
+
+    .header_wrapper {
+        padding: 0 15px;
+        /* Reduce padding on smaller screens */
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .logo_container h1 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
     }
 }
